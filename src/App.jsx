@@ -7,6 +7,7 @@ import AboutMentor from './components/AboutMentor';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import Modal from './components/Modal';
+import Chatbot from './components/Chatbot';
 import './App.css';
 
 function App() {
@@ -29,6 +30,9 @@ function App() {
       
       {/* Interactive Form Modal */}
       <Modal isOpen={isModalOpen} onClose={closeModal} />
+
+      {/* Floating AI Chatbot Assistant */}
+      <Chatbot onOpenModal={openModal} />
     </div>
   );
 }

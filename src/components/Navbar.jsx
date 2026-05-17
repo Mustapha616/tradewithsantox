@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import brandLogo from '../assets/Sanotox-logo.png';
 import './Navbar.css';
 
 const Navbar = ({ onOpenModal }) => {
@@ -22,8 +23,8 @@ const Navbar = ({ onOpenModal }) => {
       <div className="container navbar-container">
         
         {/* Left Side: Logo */}
-        <div className="navbar-logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          Santox<span className="text-gradient-primary">FX</span>
+        <div className="navbar-logo-wrapper" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          <img src={brandLogo} alt="Trade With Santox Logo" className="navbar-logo-img" />
         </div>
 
         {/* Right Side: CTA Button */}

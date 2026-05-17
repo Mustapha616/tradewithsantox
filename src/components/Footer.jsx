@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail } from 'lucide-react';
+import brandLogo from '../assets/Sanotox-logo.png';
 import './Footer.css';
 
 const Footer = () => {
@@ -8,7 +9,9 @@ const Footer = () => {
       <div className="container">
         
         <div className="footer-content">
-          <h3 className="footer-logo">Santox<span className="text-gradient-primary">FX</span></h3>
+          <div className="footer-logo-wrapper">
+            <img src={brandLogo} alt="Trade With Santox Logo" className="footer-logo-img" />
+          </div>
           <p className="footer-desc">
             Professional trading signals focused on risk management, structure, and execution. Join our free Telegram channel to watch us work.
           </p>

@@ -13,12 +13,18 @@
   margin-bottom: 50px;
 }
 
-.footer-logo {
-  font-size: 1.75rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: #FFF;
+.footer-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.footer-logo-img {
+  height: 52px; /* Sleek, elegant footer scale */
+  width: auto;
+  object-fit: contain;
+}
+
 
 .footer-desc {
   color: var(--color-text-muted);
