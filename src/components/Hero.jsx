@@ -64,12 +64,12 @@ const Hero = ({ onOpenModal }) => {
           </h1>
           
           <p className="hero-subtitle">
-            Trade With Santox — Free 7-day signal preview. Built for serious traders focused on real market setups, disciplined risk management, and full transparency.
+            Join a professional, 100% free Telegram trading community. Copy precise Crypto & Forex setups, master risk management, and build consistent market payouts directly alongside a veteran mentor.
           </p>
           
           <div className="hero-ctas">
             <button onClick={onOpenModal} className="btn-primary">
-              Get 7 Days Free <ArrowRight size={18} />
+              Join Free Community <ArrowRight size={18} />
             </button>
             <button 
               onClick={() => {
@@ -84,12 +84,12 @@ const Hero = ({ onOpenModal }) => {
           
           <div className="hero-trust-metrics">
             <div className="metric">
-              <strong>500+</strong>
+              <strong>640+</strong>
               <span>Active Students</span>
             </div>
             <div className="metric-divider"></div>
             <div className="metric">
-              <strong>$2M+</strong>
+              <strong>$700k+</strong>
               <span>Student Funding</span>
             </div>
             <div className="metric-divider"></div>

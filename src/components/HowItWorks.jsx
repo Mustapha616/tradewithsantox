@@ -4,16 +4,16 @@ import './HowItWorks.css';
 const HowItWorks = ({ onOpenModal }) => {
   const steps = [
     {
+      title: "Secure Your Spot",
+      desc: "Enter your first name and email in our CTA modal to register your community membership and activate your welcome pack."
+    },
+    {
       title: "Join the Free Channel",
-      desc: "Click the CTA buttons and join our free Telegram preview channel with absolutely zero commitments or upfront fees."
+      desc: "Click the direct Telegram invite link to enter the SantoxFX inner circle and access live trading coordinates."
     },
     {
-      title: "Watch the Setups",
-      desc: "Observe our daily technical and fundamental trade executions, live chart analyses, and payouts for 7 days."
-    },
-    {
-      title: "Upgrade to Premium",
-      desc: "Get full access to the premium channel, live real-time setups, advanced risk-management models, and direct mentorship."
+      title: "Earn & Grow Together",
+      desc: "Copy precise entries, track dynamic live chart analyses, and build daily consistency alongside 640+ serious traders."
     }
   ];
 
@@ -24,10 +24,10 @@ const HowItWorks = ({ onOpenModal }) => {
         <div className="section-header">
           <div className="badge">The Flow</div>
           <h2 className="section-title">
-            How The 7-Day <span className="text-gradient">Preview Works</span>
+            Our Execution <span className="text-gradient">Flow</span>
           </h2>
           <p className="section-subtitle">
-            No upfront credit cards, no sales pressure. Just 100% transparent market setups so you can make an informed decision.
+            Zero monthly subscription fees, zero hidden hooks. Just 100% transparent daily trade setups and instant community cooperation.
           </p>
         </div>
 
@@ -50,7 +50,7 @@ const HowItWorks = ({ onOpenModal }) => {
 
         <div className="timeline-cta" style={{ textAlign: 'center', marginTop: '50px' }}>
           <button className="btn-primary" onClick={onOpenModal}>
-            Claim Your 7-Day Access
+            Access Free Community
           </button>
         </div>
 

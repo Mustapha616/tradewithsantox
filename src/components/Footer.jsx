@@ -20,14 +20,14 @@ const Footer = () => {
             </a>
             
             {/* Twitter X */}
-            <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Twitter X">
+            <a href="https://x.com/santox_ex?s=21" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Twitter X">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style={{ display: 'block' }}>
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
               </svg>
             </a>
             
             {/* Instagram */}
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Instagram">
+            <a href="https://www.instagram.com/santox_ex?igsh=ZzRqcXZ0MnZpazhm&utm_source=qr" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Instagram">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ display: 'block' }}>
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -36,7 +36,7 @@ const Footer = () => {
             </a>
             
             {/* TikTok */}
-            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="TikTok">
+            <a href="https://www.tiktok.com/@santox_ex_?_r=1&_t=ZS-96RLUm73VD7" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="TikTok">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style={{ display: 'block' }}>
                 <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.59 4.23.86.17 1.75.28 2.63.29v3.91c-1.19-.01-2.37-.29-3.47-.84-.07 1.53-.02 3.06-.03 4.59-.08 2.22-.84 4.47-2.39 6.07-1.74 1.88-4.39 2.84-6.94 2.5-2.61-.22-5.09-1.91-6.19-4.29-1.39-2.73-.89-6.38 1.12-8.59 1.7-1.92 4.39-2.82 6.94-2.45v3.97c-1.3-.14-2.65.25-3.53 1.25-.88.94-1.14 2.33-.74 3.54.36 1.15 1.39 2.05 2.58 2.24 1.25.22 2.62-.2 3.39-1.19.74-.89.84-2.14.83-3.26V0l.33.02z"/>
               </svg>

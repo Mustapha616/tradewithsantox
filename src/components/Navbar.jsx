@@ -29,7 +29,7 @@ const Navbar = ({ onOpenModal }) => {
         {/* Right Side: CTA Button */}
         <div className="navbar-actions">
           <button className="btn-primary navbar-cta" onClick={onOpenModal}>
-            Get 7 Days Free
+            Join Free Community
           </button>
         </div>
 

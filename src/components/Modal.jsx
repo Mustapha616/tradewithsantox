@@ -121,9 +121,9 @@ const Modal = ({ isOpen, onClose }) => {
 
                 <div className="modal-form-content">
                   <div className="badge">Instant Access</div>
-                  <h3 className="modal-title">Get Your <span className="text-gradient">7-Day Free Preview</span></h3>
+                  <h3 className="modal-title">Unlock <span className="text-gradient">Free Community Access</span></h3>
                   <p className="modal-subtitle">
-                    Enter your details below to proceed to the free Telegram signals group and start watching our daily technical setups.
+                    Enter your details below to secure your spot inside the inner circle, activate your welcome pack, and instantly join the Telegram group.
                   </p>
 
                   <form onSubmit={handleSubmit} className="modal-form">
@@ -192,7 +192,7 @@ const Modal = ({ isOpen, onClose }) => {
                 </motion.h2>
                 
                 <motion.p className="thankyou-subtitle" variants={successItemVariants}>
-                  We have sent the Telegram invitation link, your welcome guide, and exclusive market insights straight to <strong>{email}</strong>.
+                  We have sent your exclusive welcome guide, starter trading resources, and official community access keys straight to <strong>{email}</strong>.
                 </motion.p>
                 
                 <motion.div className="thankyou-cta-box" variants={successItemVariants}>

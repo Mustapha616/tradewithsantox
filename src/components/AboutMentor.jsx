@@ -1,5 +1,6 @@
 import React from 'react';
 import { Target, TrendingUp, ShieldAlert, BrainCircuit } from 'lucide-react';
+import founderImage from '../assets/founder-image-normal.png';
 import './AboutMentor.css';
 
 const AboutMentor = ({ onOpenModal }) => {
@@ -35,14 +36,15 @@ const AboutMentor = ({ onOpenModal }) => {
           <div className="about-image-wrapper">
             <div className="glow-orb orb-3"></div>
             <div className="mentor-image glass-panel">
-              {/* Placeholder for mentor portrait */}
-              <div className="image-placeholder">
-                <span className="placeholder-text">Professional Portrait</span>
-              </div>
+              <img 
+                src={founderImage} 
+                alt="Santox Mentor Portrait" 
+                className="mentor-img-element" 
+              />
             </div>
             
             <div className="floating-badge badge-1 glass-panel">
-              <strong>12,000+</strong>
+              <strong>43,800+</strong>
               <span>Hours on Charts</span>
             </div>
           </div>
@@ -55,7 +57,7 @@ const AboutMentor = ({ onOpenModal }) => {
             
             <div className="about-story">
               <p>
-                With over 6 years of active market experience, I built this community out of frustration with the noise in the industry. I saw too many signal groups offering vague analysis with no clear execution, leading beginners to blow their accounts.
+                With over 5 years of active market experience, I built this community out of frustration with the noise in the industry. I saw too many signal groups offering vague analysis with no clear execution, leading beginners to blow their accounts.
               </p>
               <p>
                 I decided to create a space where everything is transparent. We don't just share charts; we share exact entries, strict risk management, and the honest reality of what it takes to be a profitable trader.

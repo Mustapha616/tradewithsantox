@@ -8,7 +8,7 @@ const FAQ = ({ onOpenModal }) => {
   const faqs = [
     {
       q: "Is the Telegram group really free?",
-      a: "Yes, the preview channel is 100% free with no commitment. You can watch our setups and see our performance before deciding if you want to join the premium inner circle."
+      a: "Yes, our community channel is 100% free with absolutely zero monthly subscription fees, hidden paywalls, or premium upsells. You get ongoing access to precise daily trading setups, live chart updates, and community support without paying a single dollar."
     },
     {
       q: "What pairs do you trade?",
@@ -74,10 +74,10 @@ const FAQ = ({ onOpenModal }) => {
         }}>
           <h3 style={{ fontSize: '1.5rem', fontWeight: 700 }}>Still Have Questions?</h3>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.95rem', maxWidth: '500px' }}>
-            The best way to get answers is to watch us perform. Join our 100% free channel and track our setups with zero risk.
+            The best way to find consistency is to trade alongside professionals. Join our free inner circle and master the markets today.
           </p>
           <button className="btn-primary" onClick={onOpenModal} style={{ marginTop: '8px' }}>
-            Get 7 Days Free
+            Join Free Community
           </button>
         </div>
 
