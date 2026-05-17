@@ -1,0 +1,240 @@
+.modal-overlay-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 5, 5, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1;
+}
+
+.modal-card {
+  width: 100%;
+  max-width: 600px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 40px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 20px 50px -10px rgba(216, 155, 42, 0.15);
+  overflow: hidden;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--color-text-muted);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.modal-close-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-text-main);
+  transform: rotate(90deg);
+}
+
+.modal-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.modal-subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  color: var(--color-text-main);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  transition: all 0.25s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 0 10px rgba(216, 155, 42, 0.15);
+}
+
+.modal-submit-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.modal-privacy-note {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+/* Immersive Fullscreen Thank You Page */
+.fullscreen-thankyou-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1200;
+  background: radial-gradient(circle at center, rgba(16, 12, 8, 0.99) 0%, #030303 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.thankyou-close-btn {
+  top: 30px;
+  right: 30px;
+}
+
+.thankyou-content {
+  max-width: 650px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.thankyou-icon-wrapper {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: rgba(216, 155, 42, 0.08);
+  border: 1px solid rgba(216, 155, 42, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  box-shadow: 0 0 20px rgba(216, 155, 42, 0.1);
+}
+
+.thankyou-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #FFF;
+  letter-spacing: -0.02em;
+}
+
+.thankyou-subtitle {
+  color: var(--color-text-muted);
+  font-size: 1.15rem;
+  line-height: 1.6;
+  max-width: 550px;
+  margin-bottom: 36px;
+}
+
+.thankyou-cta-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thankyou-btn {
+  padding: 16px 48px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 30px var(--color-primary-glow);
+}
+
+.redirect-countdown {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-top: 16px;
+  letter-spacing: 0.02em;
+}
+
+/* Responsive Overrides */
+@media (max-width: 768px) {
+  .thankyou-title {
+    font-size: 2.25rem;
+  }
+  
+  .thankyou-subtitle {
+    font-size: 1rem;
+    margin-bottom: 28px;
+  }
+  
+  .thankyou-btn {
+    padding: 14px 36px;
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .modal-card {
+    padding: 30px 20px;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,113 @@
+.video-testimonials {
+  position: relative;
+  background: linear-gradient(180deg, var(--color-bg) 0%, #111 100%);
+}
+
+.testimonials-carousel {
+  width: 100%;
+  overflow-x: auto;
+  padding: 20px 0 40px 0;
+  
+  /* Hide scrollbar for a cleaner look */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.testimonials-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  padding: 0 20px; /* To prevent cutting off the shadow on first/last cards */
+}
+
+.media-card {
+  width: 300px;
+  min-width: 300px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.media-card:hover {
+  transform: scale(1.02);
+}
+
+.media-thumbnail {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.media-thumbnail.video {
+  background: linear-gradient(45deg, #1A1C23 0%, #2A2D35 100%);
+}
+
+.media-thumbnail.audio {
+  background: linear-gradient(45deg, var(--color-accent-teal) 0%, var(--color-primary) 100%);
+}
+
+.media-thumbnail::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+.media-card:hover .media-thumbnail::after {
+  background: rgba(0,0,0,0.4);
+}
+
+.play-button {
+  position: relative;
+  z-index: 1;
+  color: #FFF;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.media-card:hover .play-button {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.duration-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.media-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.media-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.media-author {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
